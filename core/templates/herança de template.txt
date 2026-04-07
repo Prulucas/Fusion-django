@@ -1,1 +1,8 @@
 Podemos  criar um template que herda funções e aparencias de outros
+
+é necessário no topo do arquivo que extende colocar: '{% extends '(nome).html' %}'
+
+para criar o bloco no arquivo base:
+{% block (nome bloco) %}
+    html arqui
+{% endblock %}
