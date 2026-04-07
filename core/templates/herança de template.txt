@@ -1,0 +1,1 @@
+Podemos  criar um template que herda funções e aparencias de outros
