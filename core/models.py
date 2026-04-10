@@ -78,3 +78,9 @@ class Member(Base):
 
     def __str__(self):
         return self.name
+
+# Desafio de implementar as fetures
+
+
+class Features(Base):
+    ...
