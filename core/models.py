@@ -83,4 +83,21 @@ class Member(Base):
 
 
 class Features(Base):
-    ...
+    ICON_CHOISES = (
+        ('lni-rocket', 'Rocket'),
+        ('lni-laptop-phone', 'Responsive'),
+        ('lni-cog', 'Gear'),
+        ('lni-leaf', 'Leaf'),
+        ('lni-layers', 'Layers'),
+    )
+
+    name = models.CharField('Name', max_length=100)
+    description = models.TextField('Description', max_length=300)
+    icon = models.CharField('Icon', max_length=16, choices=ICON_CHOISES)
+
+    class Meta:
+        verbose_name = 'Feature'
+        verbose_name_plural = 'Features'
+
+    def __str__(self):
+        return self.name

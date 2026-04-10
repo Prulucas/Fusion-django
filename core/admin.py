@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Position, Services, Member
+from .models import Position, Services, Member, Features
 
 
 @admin.register(Position)
@@ -17,3 +17,8 @@ class ServicesAdmin(admin.ModelAdmin):
 @admin.register(Member)
 class MemberAdmin(admin.ModelAdmin):
     list_display = ('name', 'position', 'active', 'modify')
+
+
+@admin.register(Features)
+class FeaturesAdmin(admin.ModelAdmin):
+    list_display = ('name', 'active', 'modify')
