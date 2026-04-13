@@ -123,3 +123,16 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'saticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Email teste console:
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+'''
+# Email produção
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'no-replay@fusion.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_PASSWORD = fusion
+DAFAULT_FROM_EMAIL = 'contact@fusion.com'
+'''
