@@ -31,13 +31,16 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'core',
+    'django_adminlte',
+    'django_adminlte_theme',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+
 ]
 
 MIDDLEWARE = [
@@ -119,8 +122,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'saticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -136,3 +139,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = fusion
 DAFAULT_FROM_EMAIL = 'contact@fusion.com'
 '''
+LOGOUT_REDIRECT_URL = 'index'
