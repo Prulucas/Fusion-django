@@ -8,8 +8,8 @@ omit =
     */wsgi.py
     */apps.py
     */urls.py
-    */admin
+    */admin.py
     */tests/*
     */migrations/*
-    */asgi
+    */asgi.py
 
