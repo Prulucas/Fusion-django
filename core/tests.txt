@@ -60,3 +60,7 @@ omit =
     Para iniciar o server: 'python -m http.server' (IPV6)
     'python -m http.server 8000 --bind 127.0.0.1' (IPV4)
 '''
+Toda vez que criar um teste, deve se apagar o relatório do coverage e gerar outro
+
+para apagar:
+'rm -rf htmlcov'

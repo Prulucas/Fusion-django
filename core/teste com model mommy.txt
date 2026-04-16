@@ -1,0 +1,19 @@
+No mesmo diretório que se encontra o manage executar:
+'python manage.py shell'
+
+Para importar:
+'from model_mommy import mommy'
+
+mommy facilita o import de models, deixando sem a necessidade de instanciar,
+exemplo ao inves de digitar:
+>>> from core.models import Position
+>>> position = Position("Developer")
+Você fara:
+position = mommy.make('Position')
+    -> Podemos alterar também um valor, como por exemplo: >>> position.position = 'Developer' # atribuiu um valor 
+e após isso realizar o comando: position.save()
+
+Outro exemplo para utilizar:
+'>>> services = mommy.make('Services', _quantity=5)' # cria 5 services do nosso model
+
+Obs: ele cria um valor aleatório utilizando o maximo de caracteres que configurarmos
